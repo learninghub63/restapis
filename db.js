@@ -11,6 +11,8 @@ const database = () => {
         (err, database) => {
             if (!err) {
                 console.log("database connected successfully");
+            } else {
+                console.log(err);
             }
         }
     );
